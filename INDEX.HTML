@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Todo List</h1>
+    <form id="todoForm">
+      <input type="text" id="taskInput" placeholder="Add a new task...">
+      <input type="date" id="dueDate">
+      <button type="submit">Add</button>
+    </form>
+  </header>
+
+  <main>
+    <ul id="taskList" class="sortable">
+        <!-- Tasks will be added dynamically here -->
+      </ul>
+    <div class="controls">
+      <label for="filterCompleted">
+        <input type="checkbox" id="filterCompleted"> Show Completed Tasks
+      </label>
+      <button id="clearAll">Clear All Tasks</button>
+    </div>
+     
+ 
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Todo List App</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
